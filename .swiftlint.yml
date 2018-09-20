@@ -1,0 +1,76 @@
+disabled_rules:
+    # TODO notations are very handy.
+    # We have a custom rule to force them to fit a specific format.
+    - todo
+
+    # This gripes about needlessly repeating `let` in if/guard, but that
+    # is actually a requirement of Future Swift, so we *want* to do that.
+    - conditional_binding_cascade
+
+    # This is pretty baked-in to how we write code (and English prose!).
+    # When we violate it, it's because we very much meant to.
+    - comma
+
+    # This obnoxiously expects you to write a doc comment for every blessed
+    # parameter. This is a recipe for useless docs that just say the variable
+    # name repeatedly.
+    #
+    # Plus, the warning is useless - it just gripes "Documented declarations
+    # should be valid" without a hint about what "valid" means, or how your
+    # current comment is invalid.
+    #
+    # See: https://github.com/realm/SwiftLint/issues/450
+    - valid_docs
+
+    # When we violate this, we do it for good reason.
+    - statement_position
+    - opening_brace
+    - vertical_whitespace
+
+excluded:
+    # Experiments are quick and dirty proofs of concept or "how do I?" demos.
+    # They should not be linted.
+    - experiments/
+    - playgrounds/
+    - external/
+
+## Configuration for Inbuilt Rules ##
+# This warning would be a lot more useful if it ignored comments and blank lines.
+file_length:
+    warning: 256
+    error: 512
+
+function_body_length:
+    warning: 24  # Fits on one VT100 terminal screen ;)
+    error: 100
+
+line_length:
+    # This is to accommodate the UITableViewDataSource et al.'s long method names
+    warning: 150
+    error: 250
+
+type_name:
+    min_length:
+        warning: 3
+    max_length:
+        warning: 64
+
+variable_name:
+    max_length:
+        warning: 64
+    excluded:
+        - id
+        - at
+        - my
+        - vc
+        - lhs
+        - l
+        - rhs
+        - r
+        - up
+        - me
+        - to
+        - x
+        - dx
+        - dy
+        - y
