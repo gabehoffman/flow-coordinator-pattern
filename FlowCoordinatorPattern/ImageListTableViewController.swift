@@ -8,48 +8,47 @@
 
 import UIKit
 
+enum ListSection {
+    case colors([ListRow])
+
+    var header: String? {
+        switch self {
+        case .colors: return NSLocalizedString("Color Selection", comment: "Color selection")
+        }
+    }
+
+    var footer: String? {
+        switch self {
+        case .colors: return NSLocalizedString("You should really pick a color", comment: "off color comment")
+        }
+    }
+
+    var rowCount: Int {
+        switch self {
+        case .colors(let rows): return rows.count
+        }
+    }
+}
+
+enum ListRow {
+    case red
+    case yellow
+    case blue
+    case orange
+
+    var reuseIdentifier: String {
+        switch self {
+        default:
+            return "ColorCell"
+        }
+    }
+}
+
 class ImageListTableViewController: UITableViewController, StoryboardBootstrapping {
     static var storyboardName: ProjectStoryboard = .main
     static var storyboardIdentifier: String = "ImageListTableViewController"
 
-
-    enum Section {
-        case colors([Row])
-
-        var header: String? {
-            switch self {
-            case .colors: return NSLocalizedString("Color Selection", comment: "Color selection")
-            }
-        }
-
-        var footer: String? {
-            switch self {
-            case .colors: return NSLocalizedString("You should really pick a color", comment: "off color comment")
-            }
-        }
-
-        var rowCount: Int {
-            switch self {
-            case .colors(let rows): return rows.count
-            }
-        }
-    }
-
-    enum Row {
-        case red
-        case yellow
-        case blue
-        case orange
-
-        var reuseIdentifier: String {
-            switch self {
-            default:
-                return "ColorCell"
-            }
-        }
-    }
-
-    var sections: [Section] = [.colors([.red, .yellow, .blue, .orange])]
+    var sections: [ListSection] = [.colors([.red, .yellow, .blue, .orange])]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,13 +69,18 @@ class ImageListTableViewController: UITableViewController, StoryboardBootstrappi
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if case let Section.colors(colorRows) = sections[indexPath.section] {
-            let cell = tableView.dequeueReusableCell(withIdentifier: colorRows[indexPath.row].reuseIdentifier, for: indexPath)
-            // Configure the cell...
+        if case let ListSection.colors(colorRows) = sections[indexPath.section]{
+            let row =  colorRows[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: row.reuseIdentifier, for: indexPath) as! ColorViewCell
+            cell.configure(row)
             return cell
         }
         // something went wrong
         return UITableViewCell()
+    }
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
     }
 
     /*

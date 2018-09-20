@@ -19,8 +19,17 @@ class ColorViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func configure() {
-        backgroundColor = .blue
+    func configure(_ row: ListRow) {
+        switch row {
+        case .blue:
+            backgroundColor = .blue
+        case .orange:
+            backgroundColor = .orange
+        case .red:
+            backgroundColor = .red
+        case .yellow:
+            backgroundColor = .yellow
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
