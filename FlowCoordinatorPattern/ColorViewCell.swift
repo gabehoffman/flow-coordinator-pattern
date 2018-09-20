@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ColorCellTypes {
+enum ColorCellType {
     case red, yellow, blue, orange
 }
 

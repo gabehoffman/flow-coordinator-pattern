@@ -8,12 +8,13 @@
 
 import UIKit
 
-class OrangeViewController: UIViewController, StoryboardBootstrapping {
+class YellowViewController: UIViewController, StoryboardBootstrapping {
     static var storyboardName: ProjectStoryboard = .main
-    static var storyboardIdentifier: String = "OrangeViewController"
+    static var storyboardIdentifier: String = "YellowViewController"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
 }

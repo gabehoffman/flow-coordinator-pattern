@@ -10,7 +10,8 @@
 		3D8B775421542141007A1B3A /* ImageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B775321542141007A1B3A /* ImageListTableViewController.swift */; };
 		3D8B775721542E73007A1B3A /* ColorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B775621542E73007A1B3A /* ColorViewCell.swift */; };
 		3D8B775A21543595007A1B3A /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B775921543595007A1B3A /* BlueViewController.swift */; };
-		3D8B775C215435B4007A1B3A /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B775B215435B4007A1B3A /* OrangeViewController.swift */; };
+		3D8B775C215435B4007A1B3A /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B775B215435B4007A1B3A /* YellowViewController.swift */; };
+		3D8B775F215443A0007A1B3A /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B775E215443A0007A1B3A /* OrangeViewController.swift */; };
 		3DC00B362153CF340076311D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC00B352153CF340076311D /* AppDelegate.swift */; };
 		3DC00B382153CF340076311D /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC00B372153CF340076311D /* RedViewController.swift */; };
 		3DC00B3B2153CF340076311D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC00B392153CF340076311D /* Main.storyboard */; };
@@ -39,7 +40,8 @@
 		3D8B775321542141007A1B3A /* ImageListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListTableViewController.swift; sourceTree = "<group>"; };
 		3D8B775621542E73007A1B3A /* ColorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewCell.swift; sourceTree = "<group>"; };
 		3D8B775921543595007A1B3A /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
-		3D8B775B215435B4007A1B3A /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
+		3D8B775B215435B4007A1B3A /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		3D8B775E215443A0007A1B3A /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
 		3DC00B322153CF340076311D /* FlowCoordinatorPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowCoordinatorPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC00B352153CF340076311D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC00B372153CF340076311D /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +115,8 @@
 				3D8B775321542141007A1B3A /* ImageListTableViewController.swift */,
 				3D8B775921543595007A1B3A /* BlueViewController.swift */,
 				3DC00B372153CF340076311D /* RedViewController.swift */,
-				3D8B775B215435B4007A1B3A /* OrangeViewController.swift */,
+				3D8B775B215435B4007A1B3A /* YellowViewController.swift */,
+				3D8B775E215443A0007A1B3A /* OrangeViewController.swift */,
 				3D8B775621542E73007A1B3A /* ColorViewCell.swift */,
 				3DC00B412153CF370076311D /* Info.plist */,
 				3D8B775821543531007A1B3A /* Support */,
@@ -249,9 +252,10 @@
 				3DC00B5C2153D3AE0076311D /* String+NilIfEmpty.swift in Sources */,
 				3D8B775721542E73007A1B3A /* ColorViewCell.swift in Sources */,
 				3DC00B5A2153D38A0076311D /* UIColor+Additions.swift in Sources */,
+				3D8B775F215443A0007A1B3A /* OrangeViewController.swift in Sources */,
 				3DC00B582153D37C0076311D /* UITableView+Additions.swift in Sources */,
 				3DC00B362153CF340076311D /* AppDelegate.swift in Sources */,
-				3D8B775C215435B4007A1B3A /* OrangeViewController.swift in Sources */,
+				3D8B775C215435B4007A1B3A /* YellowViewController.swift in Sources */,
 				3DC00B562153D3310076311D /* FlowCoordinator.swift in Sources */,
 				3DC00B5E2153D3B70076311D /* StoryboardBootstrapping.swift in Sources */,
 				3D8B775A21543595007A1B3A /* BlueViewController.swift in Sources */,
