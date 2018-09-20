@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="-746.39999999999998" y="76.911544227886068"/>
         </scene>
-        <!--Blue View Controller-->
+        <!--Feeling Blue-->
         <scene sceneID="d9g-vs-kqL">
             <objects>
-                <viewController storyboardIdentifier="BlueViewController" id="J3q-0o-8iz" customClass="BlueViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlueViewController" title="Feeling Blue" id="J3q-0o-8iz" customClass="BlueViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZPo-ee-KQO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="-20" y="135"/>
         </scene>
-        <!--Red View Controller-->
+        <!--I'm On Fire-->
         <scene sceneID="9pv-8K-fen">
             <objects>
-                <viewController storyboardIdentifier="RedViewController" id="5VX-rg-0dI" customClass="RedViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RedViewController" title="I'm On Fire" id="5VX-rg-0dI" customClass="RedViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xAJ-pB-ksg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,6 +124,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="58.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="5VX-rg-0dI" eventType="touchUpInside" id="2OZ-zX-OWG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIN-sd-KDd">
                                         <rect key="frame" x="0.0" y="80.5" width="100" height="58.5"/>
@@ -131,6 +134,9 @@
                                         <state key="normal" title="Blue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="blueButtonTapped:" destination="5VX-rg-0dI" eventType="touchUpInside" id="yHa-75-hgE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuP-eA-SZG">
                                         <rect key="frame" x="0.0" y="161" width="100" height="58.5"/>
@@ -138,6 +144,9 @@
                                         <state key="normal" title="Red">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="redButtonTapped:" destination="5VX-rg-0dI" eventType="touchUpInside" id="ISW-JS-DQC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-75-Rjq">
                                         <rect key="frame" x="0.0" y="241.5" width="100" height="58.5"/>
@@ -145,6 +154,9 @@
                                         <state key="normal" title="Orange">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="orangeButtonTapped:" destination="5VX-rg-0dI" eventType="touchUpInside" id="Swp-ai-xQs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -165,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="704.79999999999995" y="229.83508245877064"/>
         </scene>
-        <!--Orange View Controller-->
+        <!--Bright Sunny Day-->
         <scene sceneID="h2H-Cr-pjc">
             <objects>
-                <viewController storyboardIdentifier="OrangeViewController" id="D3n-2n-3RZ" customClass="OrangeViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YellowViewController" title="Bright Sunny Day" id="D3n-2n-3RZ" customClass="YellowViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BXF-kW-GEY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +192,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="58.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="D3n-2n-3RZ" eventType="touchUpInside" id="JQO-ec-aAT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RZ-Ie-TuB">
                                         <rect key="frame" x="0.0" y="80.5" width="100" height="58.5"/>
@@ -187,6 +202,9 @@
                                         <state key="normal" title="Blue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="blueButtonTapped:" destination="D3n-2n-3RZ" eventType="touchUpInside" id="5aj-0b-eK3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWH-Bp-ezQ">
                                         <rect key="frame" x="0.0" y="161" width="100" height="58.5"/>
@@ -194,6 +212,9 @@
                                         <state key="normal" title="Red">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="redButtonTapped:" destination="D3n-2n-3RZ" eventType="touchUpInside" id="ztF-Oh-VcW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shP-wb-2Sq">
                                         <rect key="frame" x="0.0" y="241.5" width="100" height="58.5"/>
@@ -201,6 +222,9 @@
                                         <state key="normal" title="Orange">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="orangeButtonTapped:" destination="D3n-2n-3RZ" eventType="touchUpInside" id="C2Y-3v-NtL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -211,7 +235,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dj8-ET-nC9" firstAttribute="centerX" secondItem="BXF-kW-GEY" secondAttribute="centerX" id="4HM-vd-4kf"/>
                             <constraint firstItem="Dj8-ET-nC9" firstAttribute="centerY" secondItem="BXF-kW-GEY" secondAttribute="centerY" id="Ues-SD-At8"/>
@@ -238,6 +262,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="61R-Gi-OoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="202" y="-603"/>
+        </scene>
+        <!--Orange View Controller-->
+        <scene sceneID="3dk-FN-XWp">
+            <objects>
+                <viewController storyboardIdentifier="OrangeViewController" id="F3Q-8Q-nY4" customClass="OrangeViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wcO-JR-eNL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="s80-up-tkN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Auh-8Q-1DR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="-698"/>
         </scene>
     </scenes>
 </document>

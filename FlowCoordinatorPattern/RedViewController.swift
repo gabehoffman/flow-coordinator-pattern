@@ -12,13 +12,30 @@ class RedViewController: UIViewController, StoryboardBootstrapping {
     static var storyboardName: ProjectStoryboard = .main
     static var storyboardIdentifier: String = "RedViewController"
 
+    weak var delegate: ColorViewControllerDelegate?
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    func configure() {
-
+    func configure(delegate: ColorViewControllerDelegate) {
+        self.delegate = delegate
     }
 
+    @IBAction func homeButtonTapped(_ sender: Any) {
+        delegate?.returnToHome()
+    }
+
+    @IBAction func blueButtonTapped(_ sender: Any) {
+        delegate?.madeNewColorSelection(cellType: .blue)
+    }
+
+    @IBAction func redButtonTapped(_ sender: Any) {
+        delegate?.madeNewColorSelection(cellType: .red)
+    }
+
+    @IBAction func orangeButtonTapped(_ sender: Any) {
+        delegate?.madeNewColorSelection(cellType: .orange)
+    }
 }
 

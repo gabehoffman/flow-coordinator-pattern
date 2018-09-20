@@ -21,16 +21,29 @@ class AppFlowCoordinator: FlowCoordinator {
     var delegate: AppFlowCoordinatorDelegate?
 
     private var homeViewController: ImageListTableViewController {
-        return ImageListTableViewController.instantiateFromStoryboard()
+        let vc = ImageListTableViewController.instantiateFromStoryboard()
+        vc.configure(delegate: self)
+        return vc
     }
     private var redViewController: RedViewController {
-        return RedViewController.instantiateFromStoryboard()
+        let vc = RedViewController.instantiateFromStoryboard()
+        vc.configure(delegate: self)
+        return vc
     }
     private var blueViewController: BlueViewController {
-        return BlueViewController.instantiateFromStoryboard()
+        let vc = BlueViewController.instantiateFromStoryboard()
+        vc.configure(delegate: self)
+        return vc
     }
     private var yellowViewController: YellowViewController {
-        return YellowViewController.instantiateFromStoryboard()
+        let vc = YellowViewController.instantiateFromStoryboard()
+        vc.configure(delegate: self)
+        return vc
+    }
+    private var orangeViewController: OrangeViewController {
+        let vc = OrangeViewController.instantiateFromStoryboard()
+        vc.configure(delegate: self)
+        return vc
     }
 
     private(set) lazy var rootViewContoller: UIViewController = {
@@ -50,22 +63,18 @@ class AppFlowCoordinator: FlowCoordinator {
     }
 
     func enterState(appState: ApplicationState) {
+        print("Entering State: \(appState)")
         switch appState {
         case .home:
-
-            print("State: \(appState)")
+            rootViewContoller.show(homeViewController, sender: nil)
         case .red:
-
-            print("State: \(appState)")
+            rootViewContoller.show(redViewController, sender: nil)
         case .yellow:
-
-            print("State: \(appState)")
+            rootViewContoller.show(yellowViewController, sender: nil)
         case .blue:
-
-            print("State: \(appState)")
+            rootViewContoller.show(blueViewController, sender: nil)
         case .orange:
-
-            print("State: \(appState)")
+            rootViewContoller.show(orangeViewController, sender: nil)
         }
     }
 }
