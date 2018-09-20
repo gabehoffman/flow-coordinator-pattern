@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RedViewController.swift
 //  FlowCoordinatorPattern
 //
 //  Created by Gabe Hoffman on 9/20/18.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
+    func configure() {
+
+    }
 
 }
 
