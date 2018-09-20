@@ -39,7 +39,7 @@ enum ListRow {
     var reuseIdentifier: String {
         switch self {
         default:
-            return "ColorCell"
+            return "ColorViewCell"
         }
     }
 }
@@ -52,7 +52,7 @@ class ImageListTableViewController: UITableViewController, StoryboardBootstrappi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.clearsSelectionOnViewWillAppear = false
+        //self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -69,9 +69,9 @@ class ImageListTableViewController: UITableViewController, StoryboardBootstrappi
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if case let ListSection.colors(colorRows) = sections[indexPath.section]{
-            let row =  colorRows[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: row.reuseIdentifier, for: indexPath) as! ColorViewCell
+        if case let ListSection.colors(rowsInSection) = sections[indexPath.section]{
+            let row =  rowsInSection[indexPath.row]
+            let cell = tableView.dequeue(ColorViewCell.self, for: indexPath)
             cell.configure(row)
             return cell
         }
@@ -80,7 +80,14 @@ class ImageListTableViewController: UITableViewController, StoryboardBootstrappi
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
+        return 175
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if case let ListSection.colors(rowsInSection) = sections[indexPath.section]{
+            let row =  rowsInSection[indexPath.row]
+            print(row)
+        }
     }
 
     /*

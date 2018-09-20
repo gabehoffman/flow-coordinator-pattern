@@ -16,19 +16,26 @@ class ColorViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     func configure(_ row: ListRow) {
         switch row {
         case .blue:
             backgroundColor = .blue
+            self.textLabel?.text = "BLUE"
+            self.textLabel?.textColor = .white
         case .orange:
             backgroundColor = .orange
+            self.textLabel?.text = "ORANGE"
+            self.textLabel?.textColor = .white
         case .red:
             backgroundColor = .red
+            self.textLabel?.text = "RED"
+            self.textLabel?.textColor = .white
         case .yellow:
             backgroundColor = .yellow
+            self.textLabel?.text = "YELLOW"
+            self.textLabel?.textColor = .black
         }
     }
 
