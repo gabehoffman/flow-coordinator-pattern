@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3J-tg-Dmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="135"/>
+            <point key="canvasLocation" x="-23" y="77"/>
         </scene>
         <!--I'm On Fire-->
         <scene sceneID="9pv-8K-fen">
@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vz-oz-Pc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.79999999999995" y="229.83508245877064"/>
+            <point key="canvasLocation" x="684" y="77"/>
         </scene>
         <!--Bright Sunny Day-->
         <scene sceneID="h2H-Cr-pjc">
@@ -245,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8UL-WB-dYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1402" y="26"/>
+            <point key="canvasLocation" x="1393" y="77"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XxZ-td-j8v">
@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Auh-8Q-1DR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="-698"/>
+            <point key="canvasLocation" x="1031" y="-603"/>
         </scene>
     </scenes>
 </document>
