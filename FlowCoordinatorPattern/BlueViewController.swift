@@ -8,7 +8,10 @@
 
 import UIKit
 
-class BlueViewController: UIViewController {
+class BlueViewController: UIViewController, StoryboardBootstrapping {
+    static var storyboardName: ProjectStoryboard = .main
+    static var storyboardIdentifier: String = "BlueViewController"
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

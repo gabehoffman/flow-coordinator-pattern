@@ -8,7 +8,9 @@
 
 import UIKit
 
-class RedViewController: UIViewController {
+class RedViewController: UIViewController, StoryboardBootstrapping {
+    static var storyboardName: ProjectStoryboard = .main
+    static var storyboardIdentifier: String = "RedViewController"
 
     override func viewDidLoad() {
         super.viewDidLoad()

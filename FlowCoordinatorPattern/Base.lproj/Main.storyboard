@@ -12,7 +12,7 @@
         <!--Root View Controller-->
         <scene sceneID="mIj-t0-iXN">
             <objects>
-                <tableViewController id="XhR-sJ-UeT" customClass="ImageListTableViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ImageListTableViewController" id="XhR-sJ-UeT" customClass="ImageListTableViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xn6-T7-wog">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="-745" y="77"/>
         </scene>
-        <!--View Controller-->
+        <!--Blue View Controller-->
         <scene sceneID="d9g-vs-kqL">
             <objects>
-                <viewController id="J3q-0o-8iz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlueViewController" id="J3q-0o-8iz" customClass="BlueViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZPo-ee-KQO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,7 @@
         <!--Red View Controller-->
         <scene sceneID="9pv-8K-fen">
             <objects>
-                <viewController id="5VX-rg-0dI" customClass="RedViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RedViewController" id="5VX-rg-0dI" customClass="RedViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xAJ-pB-ksg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="704.79999999999995" y="229.83508245877064"/>
         </scene>
-        <!--View Controller-->
+        <!--Orange View Controller-->
         <scene sceneID="h2H-Cr-pjc">
             <objects>
-                <viewController id="D3n-2n-3RZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrangeViewController" id="D3n-2n-3RZ" customClass="OrangeViewController" customModule="FlowCoordinatorPattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BXF-kW-GEY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

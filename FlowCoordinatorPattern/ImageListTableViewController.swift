@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ImageListTableViewController: UITableViewController {
+class ImageListTableViewController: UITableViewController, StoryboardBootstrapping {
+    static var storyboardName: ProjectStoryboard = .main
+    static var storyboardIdentifier: String = "ImageListTableViewController"
+
 
     enum Section {
         case colors([Row])

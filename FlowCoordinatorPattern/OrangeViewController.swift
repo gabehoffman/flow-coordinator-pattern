@@ -8,7 +8,9 @@
 
 import UIKit
 
-class OrangeViewController: UIViewController {
+class OrangeViewController: UIViewController, StoryboardBootstrapping {
+    static var storyboardName: ProjectStoryboard = .main
+    static var storyboardIdentifier: String = "OrangeViewController"
 
     override func viewDidLoad() {
         super.viewDidLoad()
