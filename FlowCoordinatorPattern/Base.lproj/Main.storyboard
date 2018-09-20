@@ -54,6 +54,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="58.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="J3q-0o-8iz" eventType="touchUpInside" id="BZD-Wg-YbY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBp-ds-xZu">
                                         <rect key="frame" x="0.0" y="80.5" width="100" height="58.5"/>
@@ -61,6 +64,9 @@
                                         <state key="normal" title="Blue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="blueButtonTapped:" destination="J3q-0o-8iz" eventType="touchUpInside" id="ioT-mC-5EE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saQ-Cr-gnZ">
                                         <rect key="frame" x="0.0" y="161" width="100" height="58.5"/>
@@ -68,6 +74,9 @@
                                         <state key="normal" title="Red">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="redButtonTapped:" destination="J3q-0o-8iz" eventType="touchUpInside" id="S1L-EV-bJn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4v-xf-TUL">
                                         <rect key="frame" x="0.0" y="241.5" width="100" height="58.5"/>
@@ -75,6 +84,9 @@
                                         <state key="normal" title="Orange">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="orangeButtonTapped:" destination="J3q-0o-8iz" eventType="touchUpInside" id="qPC-mu-ukd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -199,7 +211,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.89743357899999998" green="0.65985625979999996" blue="0.059664897619999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Dj8-ET-nC9" firstAttribute="centerX" secondItem="BXF-kW-GEY" secondAttribute="centerX" id="4HM-vd-4kf"/>
                             <constraint firstItem="Dj8-ET-nC9" firstAttribute="centerY" secondItem="BXF-kW-GEY" secondAttribute="centerY" id="Ues-SD-At8"/>

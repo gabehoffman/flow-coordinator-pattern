@@ -44,11 +44,17 @@ enum ListRow {
     }
 }
 
+protocol ImageListTableViewControllerDelegate: FlowCoordinatorDelegate {
+    func madeImageSelection(colorType: ColorCellType)
+}
+
+
 class ImageListTableViewController: UITableViewController, StoryboardBootstrapping {
     static var storyboardName: ProjectStoryboard = .main
     static var storyboardIdentifier: String = "ImageListTableViewController"
 
     var sections: [ListSection] = [.colors([.red, .yellow, .blue, .orange])]
+    weak var delegate: ImageListTableViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +62,10 @@ class ImageListTableViewController: UITableViewController, StoryboardBootstrappi
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+
+    func configure(delegate: ImageListTableViewControllerDelegate) {
+        self.delegate = delegate
     }
 
     // MARK: - Table view data source
@@ -86,7 +96,16 @@ class ImageListTableViewController: UITableViewController, StoryboardBootstrappi
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if case let ListSection.colors(rowsInSection) = sections[indexPath.section]{
             let row =  rowsInSection[indexPath.row]
-            print(row)
+            switch row {
+            case .red:
+                delegate?.madeImageSelection(colorType: .red)
+            case .yellow:
+                delegate?.madeImageSelection(colorType: .yellow)
+            case .blue:
+                delegate?.madeImageSelection(colorType: .blue)
+            case .orange:
+                delegate?.madeImageSelection(colorType: .orange)
+            }
         }
     }
 
